@@ -1,3 +1,2 @@
-henlo, blocked user, lol!
-hello
-go away
+khirthi = henlo, anantya-ncompass.
+anantya = hello, khirthi-ncompass.
