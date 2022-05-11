@@ -5,12 +5,11 @@ on: [pull_request_target, issues]
 jobs:
   greeting:
     runs-on: main 
-    echo "🎉 The job was automatically triggered by a push event.":
-    shell: /usr/bin/bash -e {0}
     permissions:
       issues: write
       pull-requests: write
     steps:
+    - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
