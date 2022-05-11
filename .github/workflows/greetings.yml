@@ -4,7 +4,7 @@ on: [pull_request_target, issues]
 
 jobs:
   greeting:
-    runs-on: ubuntu-latest  
+    runs-on: main 
     echo "🎉 The job was automatically triggered by a push event.":
     shell: /usr/bin/bash -e {0}
     permissions:
